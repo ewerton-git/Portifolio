@@ -1,0 +1,10 @@
+body{
+    background-color: gray;
+
+}
+
+main{
+    background-color: rgb(231, 211, 174);
+    padding: 20px;
+    border-radius: 10px;
+}
