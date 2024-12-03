@@ -1,10 +1,157 @@
-body{
-    background-image: url(img/plano\ de\ fundo.png);
-
+*{
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    background-image: url(img/plano\ de\ fundo.png)
+}
+
 
 main{
-    background-color: ;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(170, 4, 170, 0.521);
+    padding: 30px;
+    border-radius: 20px  
 }
+
+h1,h2,p,span {
+    color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+section{
+    margin: 3%;
+    padding: 4%;
+    font-size: 300%;
+    flex-direction: column;
+    min-width: 162px;
+}
+
+.saudacao{
+    margin: -2%;
+
+}
+
+.nome{
+    margin-top: -11px;
+}
+
+.profissao{
+    margin-top: -2%;
+    color: greenyellow;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/*Responsividade cabeçalho*/
+@media screen and (max-width: 1100px){
+    .cabecalho{
+        width: 100%;
+        flex-direction: column;
+    }  
+}
+
+
+@media screen and (max-width: 749px){
+    .tituloInicial{
+       font-size: 69%;
+    }  
+    .imgTI{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: space-around;
+    
+    }  
+    .cabecalho{
+        width: 100%;
+        flex-direction: column;
+    }  
+
+}
+@media screen and (max-width: 360px){
+    .tituloInicial{
+        font-size: 40%;    
+    }  
+    .nome{
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 320px){
+    .tituloInicial{
+        font-size: 40%;    
+    }  
+    .imgTI{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 28%;
+    
+    } 
+    .nome{
+        margin-top: 1%;
+    }
+    .saudacao{
+        margin-top: 13%;
+        font-size: 94%;
+    }
+}
+
+@media screen and (max-width: 200px){
+    .tituloInicial{
+        font-size: 40%;    
+    }  
+    .imgTI{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 28%;
+        
+    } 
+    .nome{
+        margin-top: 1%;
+        font-size: 104%;
+    }
+    .saudacao{
+        margin-top: 13%;
+        font-size: 115%;
+    }
+    .profissao{
+        margin-top: -2%;
+        font-size: 77%;
+    }
+    .cabecalho{
+        width: 89%;
+    }
+    .palavra{
+        font-size: 10px;
+        margin-top: 12px;
+        display: flex;
+    }
+    .inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 10px;
+    }
+}
+
+
+/*2º Seção apresentação*/
+   
+.Apresentaca
+{
+    background-color: rgb(67, 9, 121);
+   
+}
+
