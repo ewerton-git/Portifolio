@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(img/plano\ de\ fundo\ 3.png)
+    background-image: url(img/plano\ de\ fundo\ 1.png)
 }
 
 
@@ -18,6 +18,9 @@ h1,h2,p,span {
     color: blanchedalmond;
     font-family: 'Times New Roman', Times, serif;
 
+}
+h4{
+    color: grey;
 }
 .logo{
     width: 4%;
@@ -73,6 +76,9 @@ section{
     }
     .saudacao{
         font-size: 165%;
+    }
+    .palavra{
+        font-size: 80%;
     }
     
 }
@@ -131,7 +137,7 @@ section{
         margin-top: 2%;
     }
     .palavra{
-        font-size: 100%;
+        font-size: 80%;
         margin: 3%;
         display: flex;
         align-content: flex-start;
@@ -144,8 +150,8 @@ section{
         flex-direction: column;
     }
     .logo{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }
 @media screen and (max-width: 320px){
@@ -168,7 +174,7 @@ section{
         font-size: 94%;
     }   
     .palavra{
-        font-size: 79%;
+        font-size: 60%;
         margin: 3%;
         display: flex;
         align-content: flex-start;
@@ -181,8 +187,8 @@ section{
         flex-direction: column;
     }
     .logo{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }  
 
@@ -230,9 +236,14 @@ section{
 
 /*2º Seção apresentação*/
    
-.Apresentaca
+.apresentacao
 {
-    background-color: rgb(67, 9, 121);
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(img/Plano\ de\ fundo\ 2.png);
+    margin: 0;
+    
+    
 }
 
