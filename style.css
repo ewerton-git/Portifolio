@@ -117,8 +117,8 @@ section{
        font-size: 69%;
     }  
     .imgTI{
-        width: 100%;
-        height: 15%;
+        width: 80%;
+        height: auto;
         display: flex;
         justify-content: space-around;
     
@@ -159,8 +159,8 @@ section{
         font-size: 40%;    
     }  
     .imgTI{
-        width: 100%;
-        height: 100%;
+        width: 67%;
+        height: auto;
         display: flex;
         justify-content: space-around;
         margin-top: 28%;
@@ -197,8 +197,8 @@ section{
         font-size: 40%;    
     }  
     .imgTI{
-        width: 100%;
-        height: 100%;
+        width: 67%;
+        height: auto;
         display: flex;
         justify-content: space-around;
         margin-top: 28%;
@@ -247,3 +247,11 @@ section{
     
 }
 
+/*Responsividade da apresentação*/
+ @media screen and (max-width: 320px) {
+    .tituloAp {
+    font-size: 49%;
+   }
+    
+    
+ }
