@@ -1,257 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
 body{
-    background-image: url(img/plano\ de\ fundo\ 1.png)
+    background-image: linear-gradient(
+        45deg, black, #221133 
+     );
 }
-
 
 main{
-    background-color: rgba(170, 4, 170, 0.521);
-    padding: 30px;
-    border-radius: 20px  
-}
-
-h1,h2,p,span {
-    color: blanchedalmond;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-h4{
-    color: grey;
-}
-.logo{
-    width: 4%;
-    height: 23%;
-    margin: 0%;
-}
-
-.palavra{
-    display: flex; 
-    justify-content: space-around;
-    margin: 4px;
-    margin-top: -23px; 
-    font-size: 29px;
-}
-
-section{
-    margin: 3%;
-    padding: 4%;
-    font-size: 300%;
-    flex-direction: column;
-    min-width: 162px;
-}
-
-.saudacao{
-    margin: -2%;
+    background-size: 100%;
+    color: #ffffff;
 
 }
 
-.nome{
-    margin-top: 5%;
-    font-size: 212%;
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
 }
 
-.profissao{
-    margin-top: 0%;
-    color: greenyellow;
+.tamanhodaSecao{
+    margin: 0 3%;
+   
 }
 .cabecalho{
+    color: #ffffff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    }  
+
+.imgTI{
+    width: 15rem;
+    height: 14rem;
+}
+ 
+
+.saudacao{
+     font-size: 30px;
+    }
+
+.nome{
+    font-size: 80px;
+    }
+
+.profissao{
+    font-size: 30px;
+    }
+
+header{
+    height:;
+    }
+.logo li{
+    list-style: none;
+    }
+a{
+    text-decoration: none;
+}
+.imgSkills{
+    width: 70%;
+}
+
+
+/*Cabeçalho*/
+.menuNavegacao{
+    display: flex;
     align-items: center;
 }
-
-/*Responsividade cabeçalho*/
-@media screen and (max-width: 1921px){
-    .imgTI{
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-    }
-    .saudacao{
-        font-size: 165%;
-    }
-    .palavra{
-        font-size: 80%;
-    }
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    
     
 }
-@media screen and (max-width: 1376px){
-    .saudacao{
-        font-size: 109%;
-    }
-    .nome{
-        font-size: 173%;
-    }
-    .profissao{
-        font-size: 100%;
-    }
-
-    .imgTI{
-        width: 300px;
-        height: 300px;
-    }
+.logo{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
     
 }
-@media screen and (max-width: 1100px){
-    .cabecalho{
-        width: 100%;
-        flex-direction: column;
-    }  
+.menuNavegacao ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    display: flex;
 }
 
-@media screen and (max-width: 768px){
-    .saudacao{
-        font-size: 100%;
-    }  
-}
-
-@media screen and (max-width: 749px){
-    .tituloInicial{
-       font-size: 69%;
-    }  
-    .imgTI{
-        width: 80%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-    
-    }  
-    .cabecalho{
-        width: 100%;
-        flex-direction: column;
-    }  
+.navIten{
+    margin: 0 15px ;
+    width: 1px;
+    height: 1px;
 
 }
-@media screen and (max-width: 360px){
-    .tituloInicial{
-        font-size: 40%;    
-    }  
-    .nome{
-        margin-top: 2%;
-    }
-    .palavra{
-        font-size: 80%;
-        margin: 3%;
-        display: flex;
-        align-content: flex-start;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    }
-    .inicio{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .logo{
-        width: 20px;
-        height: 20px;
-    }
+.mobileMenu{
+    display: none;
 }
-@media screen and (max-width: 320px){
-    .tituloInicial{
-        font-size: 40%;    
-    }  
-    .imgTI{
-        width: 67%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 28%;
-    
-    } 
-    .nome{
-        margin-top: 1%;
-    }
-    .saudacao{
-        margin-top: 13%;
-        font-size: 94%;
-    }   
-    .palavra{
-        font-size: 60%;
-        margin: 3%;
-        display: flex;
-        align-content: flex-start;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    }
-    .inicio{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .logo{
-        width: 20px;
-        height: 20px;
-    }
-}  
+.mobileIcon{
+    display: none;
+}
 
-@media screen and (max-width: 200px){
-    .tituloInicial{
-        font-size: 40%;    
-    }  
-    .imgTI{
-        width: 67%;
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 28%;
+
+/*Responsividade Menu Navegação*/
+@media screen and (max-width:730px) {
+    .menu-nav{
+        padding: 0.5rem 2rem;
+    }
+    .navIten{
+        display: none;
         
-    } 
-    .nome{
-        margin-top: 1%;
-        font-size: 104%;
+    }
+    .mobileIcon{
+        display: flex;
+        
+    }
+    .mobileIcon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobileMenu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        
+    }
+    .mobileMenu .navIten{
+        display: block;
+        padding-top: 1.7rem;
+        list-style: none;
+        
+    }
+    .open{
+        display: block;
+    }
+}
+
+/*Responsividade Cabeçalho*/
+
+@media screen and (max-width:1920px) {
+    .cabecalho{
+        padding: 11rem 0;
+    }
+    
+} 
+@media screen and (max-width:803px){
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7px 0;
+    }
+    .imgTI{
+        width: 10rem;
+        height: auto;
     }
     .saudacao{
-        margin-top: 13%;
-        font-size: 115%;
+        font-size: 1.5rem;
+    }
+    .nome{
+        font-size: 2.5rem;
     }
     .profissao{
-        margin-top: -2%;
-        font-size: 77%;
+        font-size: 1.5rem;
     }
+}
+
+@media screen and (max-width:500px){
     .cabecalho{
-        width: 89%;
-    }
-    .palavra{
-        font-size: 14px;
-        margin-top: 2px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .inicio{
+    .imgTI{
+        width: 70px;
+        height: auto;
+    }
+    .saudacao{
+        font-size: 10px;
+    }
+    .nome{
+        font-size: 25px;
+    }
+    .profissao{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    .cabecalho{
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;  
+    }
+    
+
+    .imgTI{
+        width: 60px;
+        height: auto;
+    }
+    .saudacao{
+        font-size: 12px;
+    }
+    .nome{
+        font-size: 25px;
+    }
+    .logo li{
+        list-style: none;
+    }
+   
+}
+
+/*Apresentação*/
+.tamanhodaSecaoAp{
+    padding: 1rem;
+}
+
+.apresentacao{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
-    font-size: 10px;
+}
+.tituloAp{
+    font-size: 32px;
+    margin-top: 20px;
+    text-align: center;
+}
+.biografia{
+    font-size: 26px;
+    text-align: justify;
+    text-indent: 45px;
+}
+.perfil{
+    border-radius: 150px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 13.2px;
+}
+.perfil:hover{
+    transform: scale(1.1);
+    box-shadow: 0  5px rgba(59, 18, 112, 0.2);
+}
+.apresentacaoMobile{
+    display: none;
+}
+
+/*Fim da Apresentação*/
+
+/*Responsividade Apresentação*/
+
+@media screen and (max-width: 768px) {
+    .tamanhodaSecaoAp{
+        padding: 2rem 1.5rem;
+    }
+    .tituloAp{
+        font-size: 11px;
+        margin-top: -10px;
+    }
+    .biografia{
+        font-size: 1rem;
+    }
+    .perfil{
+        width: 11.5rem;
+    }
+
+}
+@media screen and (max-width:360px) {
+    .apresentacao{
+        display: none;
+    }
+    .tituloAp{
+        display: none;
+    }
+
+    .tituloApMb{
+        text-align: center;
+        font-size: 12px;
+    }
+    .apresentacaoMobile{
+        display: block;
+        margin-top: -28px;
+    }
+    .biografiaMb{
+        font-size: 10px;
+        padding: 0px 8px;
+        text-align: justify;
+    }
+    .perfilMb{
+        float: left;
+        margin-right: 20px;
+        width: 60px;
+        border-radius: 43px;
+    }
+    
+}
+
+/*Skills*/
+
+.skills{
+    Display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+}
+.tituloSkills{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 6%;
+}
+.imgSkills{
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 13.2px;
+    border-radius: 15px;
+    margin
+}
+.imgSkills:hover{
+    transform: scale(1.1);
+    box-shadow: 0  5px rgba(59, 18, 112, 0.2);
+}
+.tamanhodaSecaoHs{
+    margin: 6rem 0;
+}
+
+/*Fim da skills*/
+
+/*Responsividade Hard Skills*/
+@media screen and (max-width:360px) {
+    .tamanhodaSecaoHs{
+        margin-top: -1rem;
+    }
+    .tituloSkills{
+        font-size: 12px;
+    }
+    .imgSkills{
+        width: 59px;
     }
 }
 
+@media screen  and (min-width: 768px) {
+    .imgSkills{
+        width: 80%;
+    }
+    .tamanhodaSecaoHs{
+        margin-top: -3rem ;
+    }
+}
 
-/*2º Seção apresentação*/
-   
-.apresentacao
-{
+    
+
+/*Fim Responsividade HS*/
+ 
+/*Projects*/
+.tituloProj{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+}
+.projetos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+.botao{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    max-width: 350px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 13.2px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.botao:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(59, 18, 112, 0.2);
+}
+
+.tituloprojeto{
+    padding: 4%;
+}
+.descricaoProj{
+    margin-top: 10%;
+    display: flex;
     justify-content: space-between;
-    background-image: url(img/Plano\ de\ fundo\ 2.png);
-    margin: 0;
+}
+.tamanhodaSecaoPro{
+    padding: 11rem 0;
+}
+
+/*Fim dos projetos*/
+
+/*Responsividade Projetos*/
+
+@media screen and (max-width:768px) {
+
+    .botao{
+        width: 150px;
+        font-size: 10px
+    }
+    .tamanhodaSecaoPro{
+        padding: 4rem 0;
+    }
+
+}
+@media screen and (max-width:360px) {
+    .tamanhodaSecaoPro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -65px;
+        padding: 16px;
+    }
+   
+    .tituloProj{
+        font-size: 12px;
+    
+    }
+    .projetos{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .botao{
+        width: 30%;
+        font-size: 12px;
+    }
     
     
 }
 
-/*Responsividade da apresentação*/
- @media screen and (max-width: 320px) {
-    .tituloAp {
-    font-size: 49%;
-   }
+/*Footer*/
+.footer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+}
+.textFooter{
+    font-size: 22px;
+}
+
+
+/*Responsividade footer*/
+@media screen and (max-width: 768px) {
+    .textFooter{
+        font-size: 10px;
+    }
+    .imgFooter{
+        width: 25px;
+
+    }
     
-    
- }
+}
