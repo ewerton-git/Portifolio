@@ -13,13 +13,11 @@ body{
      );
 }
 
-main{
+.tamanhodaSecaoAp, .tamanhodaSecaoPro{
 
     background-color: rgba(116, 106, 106, 0.664);
     border-radius: 20px;
-    color: #ffffff;
-
-}
+    }
 
 
 footer{
@@ -308,6 +306,47 @@ a{
 
 /*Skills*/
 
+/*teste scrol infinito*/
+.test {
+    list-style: none;
+}
+.scrollInfinito{
+    background-color: #dfdfdf;
+    width: 100%;
+}
+.hS{
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.hS ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: 15s infinite slide linear;
+}
+
+.hS ul li {
+  flex-shrink: 0; 
+}
+.hS img{
+    width: 150px;
+    filter: color(90%);
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/*fim do scrol*/
+
 .skills{
     Display: flex;
     justify-content: space-around;
@@ -363,6 +402,34 @@ a{
     
 
 /*Fim Responsividade HS*/
+
+/*TESTE CARROSEL PROJETOS*/
+.carrossel{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+ .itemCarrossel{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+ }
+ .itemCarrossel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* FIM DO CARROSEL PROJETOS*/
+
+
  
 /*Projects*/
 .tituloProj{
