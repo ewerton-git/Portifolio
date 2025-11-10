@@ -372,7 +372,7 @@ a{
     box-shadow: 0  5px rgba(59, 18, 112, 0.2);
 }
 .tamanhodaSecaoHs{
-    margin: 6rem 0;
+    margin-top: 20px;
 }
 
 /*Fim da skills*/
@@ -436,7 +436,14 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 32px;
+    font-size: 18px;
+}
+.tituloProjetos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    color: white;
 }
 .projetos{
     display: flex;
