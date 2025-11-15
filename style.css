@@ -71,6 +71,9 @@ a{
 
 
 /*Cabeçalho*/
+section.tamanhodaSecao{
+    padding: 40px 4%;
+}
 .menuNavegacao{
     display: flex;
     align-items: center;
@@ -222,7 +225,7 @@ a{
 }
 
 /*Apresentação*/
-.tamanhodaSecaoAp{
+/*.tamanhodaSecaoAp{
     padding: 1rem;
 }
 
@@ -252,6 +255,28 @@ a{
 }
 .apresentacaoMobile{
     display: none;
+}
+*/
+section.sobre{
+    padding: 40px 4%;
+    background-color: #221133;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.tituloSobre{
+    color: aqua;
+    font-size: 50px;
+}
+.paraSobre{
+    color: yellowgreen;
+    margin: 20px;
+    text-align: justify;
+}
+.imgSobre{
+    border-radius: 20px;
 }
 
 /*Fim da Apresentação*/
@@ -307,12 +332,15 @@ a{
 /*Skills*/
 
 /*teste scrol infinito*/
+section.scrollInfinito{
+    padding: 40px 4%;
+}
 .test {
     list-style: none;
 }
 .scrollInfinito{
-    background-color: #dfdfdf;
-    width: 100%;
+    background-color: grey;
+    
 }
 .hS{
     max-width: 1250px;
@@ -358,7 +386,7 @@ a{
 .tituloSkills{
     text-align: center;
     font-size: 32px;
-    margin-top: 6%;
+    color: black;
 }
 .imgSkills{
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
@@ -390,7 +418,7 @@ a{
     }
 }
 
-@media screen  and (min-width: 768px) {
+@media screen  and (max-width: 768px) {
     .imgSkills{
         width: 80%;
     }
@@ -404,6 +432,10 @@ a{
 /*Fim Responsividade HS*/
 
 /*TESTE CARROSEL PROJETOS*/
+section.secaoProjetos{
+    padding: 40px 4%;
+    background-color: #221133;
+}
 .carrossel{
     position: relative;
     width: 100%;
@@ -474,9 +506,10 @@ a{
     display: flex;
     justify-content: space-between;
 }
-.tamanhodaSecaoPro{
+/*.tamanhodaSecaoPro{
     padding: 11rem 0;
-}
+}*/
+
 
 /*Fim dos projetos*/
 
